@@ -1,5 +1,5 @@
 name: '@simatic-ax/collections'
-version: 0.0.0-placeholder # correct version will be set by script
+version: 0.0.1
 author: Siemens AG
 type: lib
 variables:
