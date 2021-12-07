@@ -3,9 +3,20 @@
 This collection library contains some usefull classes for list handling of types of IListItem. The Advandage of the concept is, that you don't need to use arrays with fixed size and you can mix the types as long as they're of type IListItem.
 
 > Important: By inserting, adding, writing some items NO copy of the object will be created.
+
+## Install this package
+
+Enter:
+```cli
+apax add @simatic-ax/collections
+```
+
+> to install this package you need to login into the GitHub registry. You'll find more information [here](https://github.com/simatic-ax/.github/blob/main/doc/personalaccesstoken.md)
+
 ## Linked List
 
 ### Add() : IListItem Method
+
 Add a new object IListItem to the end of the list
 
 |Parameter|Type|Description|
@@ -22,7 +33,9 @@ METHOD PUBLIC FINAL Add : IListItem
     END_VAR
 END_METHOD
 ```
+
 ### Remove() : BOOL Method
+
 Remove a IListItem from the list.
 
 ```iec-st
@@ -35,9 +48,5 @@ END_METHOD
 
 |Parameter|Type|Description|
 |-|-|-|
-|Return Value   |Bool       |Removing item was successful  |
-|item           |IListItem  |Refeence to item to be removed |
-
-
-## Fifo
-## Stack
+|Return Value   |Bool       |Removing item was successful    |
+|item           |IListItem  |Reference to item to be removed |
