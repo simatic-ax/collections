@@ -1,8 +1,8 @@
 USING AxUnit.Assert;
-USING Siemens.Ax.Collections;
+USING Simatic.Ax.Collections;
 USING AxUnit.Assert;
 
-NAMESPACE Siemens.Ax.Collections
+NAMESPACE Simatic.Ax.Collections
     {TestFixture}
     CLASS TestStack
         VAR PRIVATE

@@ -1,4 +1,4 @@
-NAMESPACE Siemens.Ax.Collections
+NAMESPACE Simatic.Ax.Collections
     INTERFACE ILinkedList
         METHOD Head : IListItem
         END_METHOD

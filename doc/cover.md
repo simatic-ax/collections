@@ -1,4 +1,4 @@
-# Siemens.AX.Collections
+# Simatic.Ax.Collections
 
 Version: 0.0.0-placeholder
 
@@ -6,4 +6,4 @@ Version: 0.0.0-placeholder
 
 The library consists of the following namespaces:
 
-- `Siemens.AX.Collections`
+- `Simatic.Ax.Collections`

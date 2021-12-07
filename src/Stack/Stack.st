@@ -1,4 +1,4 @@
-NAMESPACE Siemens.Ax.Collections
+NAMESPACE Simatic.Ax.Collections
     CLASS Fifo IMPLEMENTS IFifo
         VAR PRIVATE
             _list : LinkedList;

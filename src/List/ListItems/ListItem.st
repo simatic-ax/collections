@@ -1,4 +1,4 @@
-NAMESPACE Siemens.Ax.Collections
+NAMESPACE Simatic.Ax.Collections
     CLASS ListItem IMPLEMENTS IListItem, IMuteableListItem
 
         VAR PRIVATE

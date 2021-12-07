@@ -1,4 +1,4 @@
-NAMESPACE Siemens.Ax.Collections
+NAMESPACE Simatic.Ax.Collections
     INTERFACE IListItem
         METHOD HasNext : BOOL
         END_METHOD

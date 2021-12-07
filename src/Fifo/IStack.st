@@ -1,4 +1,4 @@
-NAMESPACE Siemens.Ax.Collections
+NAMESPACE Simatic.Ax.Collections
     INTERFACE IFifo
         METHOD Write
             VAR_INPUT

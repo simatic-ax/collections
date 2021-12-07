@@ -1,4 +1,4 @@
-NAMESPACE Siemens.Ax.Collections
+NAMESPACE Simatic.Ax.Collections
     INTERFACE IStack
         METHOD Push : IListItem
             VAR_INPUT

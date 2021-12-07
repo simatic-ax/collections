@@ -1,4 +1,4 @@
-NAMESPACE Siemens.Ax.Collections
+NAMESPACE Simatic.Ax.Collections
     CLASS Stack IMPLEMENTS IStack
         VAR PRIVATE
             _list : LinkedList;

@@ -1,4 +1,4 @@
-NAMESPACE Siemens.Ax.Collections
+NAMESPACE Simatic.Ax.Collections
     CLASS LinkedList IMPLEMENTS ILinkedList
         VAR PRIVATE
             _tail : IListItem;
