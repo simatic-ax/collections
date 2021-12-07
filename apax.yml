@@ -1,5 +1,5 @@
 name: '@simatic-ax/collections'
-version: 0.0.2
+version: 0.0.3
 author: Siemens AG
 type: lib
 variables:
@@ -21,6 +21,7 @@ registries:
 files:
   - 'README.md'
   - 'LICENSE.md'
+  - 'Legal.md'
   - 'doc/'
   - 'src/' # ship library with source
   # - 'bin/1500/'   # ship library with binary
