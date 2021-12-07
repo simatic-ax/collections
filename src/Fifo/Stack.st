@@ -9,7 +9,7 @@ NAMESPACE Simatic.Ax.Collections
                 item : IListItem;
             END_VAR
 
-            _list.Add(item := item);
+            Push := _list.Add(item := item);
         END_METHOD
         
         METHOD PUBLIC Pop : IListItem
