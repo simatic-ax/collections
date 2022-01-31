@@ -21,7 +21,7 @@ scripts:
     - apax pack
     - apax publishlib
 devDependencies:
-  '@ax/sdk': 1.0.63
+  '@ax/sdk': 1.0.138
 registries:
   '@simatic-ax': 'https://npm.pkg.github.com'
 files:

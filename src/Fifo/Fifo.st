@@ -1,28 +1,24 @@
 NAMESPACE Simatic.Ax.Collections
-    CLASS Stack IMPLEMENTS IStack
+    CLASS Fifo IMPLEMENTS IFifo
         VAR PRIVATE
             _list : LinkedList;
         END_VAR
 
-        METHOD PUBLIC FINAL Push : IListItem
+        METHOD PUBLIC FINAL Write
             VAR_INPUT
                 item : IListItem;
             END_VAR
 
-            Push := _list.Add(item := item);
+            _list.Add(item := item);
         END_METHOD
         
-        METHOD PUBLIC Pop : IListItem
-            Pop := _list.Head();
-            _list.Remove(_list.Head());
+        METHOD PUBLIC Read : IListItem
+            Read := _list.Tail();
+            _list.Remove(_list.Tail());
         END_METHOD
     
         METHOD PUBLIC Count : INT
             Count := _list.Count();
-        END_METHOD
-
-        METHOD PUBLIC Top : IListItem
-            Top := _list.Head();
         END_METHOD
 END_CLASS
 
