@@ -1,5 +1,8 @@
 # Simatic.AX.Collections
 
+## Version
+Version 0.2.0 see [change log](changelog.md)
+
 This collection library contains some useful classes for list handling of types of IListItem. The Advantage of the concept is, that you don't need to use arrays with fixed size and you can mix the types as long as they're of type IListItem.
 
 > Important: By inserting, adding, writing some items NO copy of the object will be created.
