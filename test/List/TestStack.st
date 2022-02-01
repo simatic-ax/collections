@@ -6,7 +6,7 @@ NAMESPACE Simatic.Ax.Collections
     {TestFixture}
     CLASS TestStack
         VAR PRIVATE
-            _stack : Stack;                    
+            _stack : Lifo;                    
             _i1 : ListItem;
             _i2 : ListItem;
             _i3 : ListItem;

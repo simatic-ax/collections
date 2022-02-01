@@ -1,5 +1,5 @@
 NAMESPACE Simatic.Ax.Collections
-    CLASS Stack IMPLEMENTS IStack
+    CLASS Lifo IMPLEMENTS ILifo
         VAR PRIVATE
             _list : LinkedList;
         END_VAR
