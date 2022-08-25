@@ -60,7 +60,9 @@ END_METHOD
 |Return Value   |Bool       |Removing item was successful    |
 |item           |IListItem  |Reference to item to be removed |
 
-## FIFO
+## Queue
+
+Represents a first-in, first-out (FIFO) collection of IListItem.
 
 ### Enqueue(item : IListItem) : IListItem Method
 
@@ -99,7 +101,9 @@ END_METHOD
 |-|-|-|
 |Return Value   |INT        |Count of elements in the FIFO   |
 
-## LIFO
+## Stack
+
+Represents a simple last-in-first-out (LIFO) collection of IListItem.
 
 ### Push(item : IListItem) : IListItem Method
 
@@ -127,10 +131,10 @@ END_METHOD
 |-|-|-|
 |Return Value   | IListItem       | Return and remove the newest element in the list  |
 
-### Top() : IListItem Method
+### Peek() : IListItem Method
 
 ```iec-st
-METHOD Pop : IListItem
+METHOD Peek : IListItem
 END_METHOD
 ```
 

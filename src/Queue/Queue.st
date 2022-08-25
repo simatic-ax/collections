@@ -1,5 +1,5 @@
 NAMESPACE Simatic.Ax.Collections
-    CLASS Fifo IMPLEMENTS IFifo
+    CLASS Fifo IMPLEMENTS ICollection
         VAR PRIVATE
             _list : LinkedList;
         END_VAR

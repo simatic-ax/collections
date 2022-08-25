@@ -1,16 +1,17 @@
 NAMESPACE Simatic.Ax.Collections
-    INTERFACE IFifo
+
+    INTERFACE IQueue
         METHOD Enqueue : IListItem
             VAR_INPUT
                 item : IListItem;
             END_VAR
         END_METHOD
-        
         METHOD Dequeue : IListItem
         END_METHOD
-
-        METHOD Count : INT 
+        METHOD Peek : IListItem
         END_METHOD
+        METHOD Count : INT
+        END_METHOD
+    END_INTERFACE
 
-    END_INTERFACE    
 END_NAMESPACE

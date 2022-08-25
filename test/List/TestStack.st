@@ -6,7 +6,7 @@ NAMESPACE Simatic.Ax.Collections
     {TestFixture}
     CLASS TestStack
         VAR PRIVATE
-            _stack : Lifo;                    
+            _stack : Stack;                    
             _i1 : ListItem;
             _i2 : ListItem;
             _i3 : ListItem;
@@ -32,14 +32,14 @@ NAMESPACE Simatic.Ax.Collections
             _iReturn := _stack.Push(item := _i3);
 
             _item := _i3;
-            Equal(_stack.Top() = _item, TRUE);
+            Equal(_stack.Peek() = _item, TRUE);
             Equal(_stack.Count(), 3);
         END_METHOD
         
         {Test}
         METHOD PUBLIC Test_Tail_Top_NULL
             THIS.Test_Add_3_Elements();
-            Equal(_stack.Top().NextItem() = NULL, TRUE);
+            Equal(_stack.Peek().NextItem() = NULL, TRUE);
         END_METHOD
         
 
@@ -50,7 +50,7 @@ NAMESPACE Simatic.Ax.Collections
             _item := _i3;
             Equal(_stack.Pop() = _item, TRUE);
             _item := _i2;
-            Equal(_stack.Top() = _item, TRUE);
+            Equal(_stack.Peek() = _item, TRUE);
         END_METHOD
 
         {Test}
@@ -63,7 +63,7 @@ NAMESPACE Simatic.Ax.Collections
             Equal(_stack.Pop() = _item, TRUE);
             
             _item := _i1;
-            Equal(_stack.Top() = _item, TRUE);
+            Equal(_stack.Peek() = _item, TRUE);
         END_METHOD
 
         {Test}
