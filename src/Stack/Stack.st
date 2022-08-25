@@ -1,5 +1,5 @@
 NAMESPACE Simatic.Ax.Collections
-    CLASS Stack IMPLEMENTS IStack
+    CLASS FINAL Stack IMPLEMENTS ICollection
         VAR PRIVATE
             _list : LinkedList;
         END_VAR
@@ -21,8 +21,8 @@ NAMESPACE Simatic.Ax.Collections
             Count := _list.Count();
         END_METHOD
 
-        METHOD PUBLIC Top : IListItem
-            Top := _list.Head();
+        METHOD PUBLIC Peek : IListItem
+            Peek := _list.Head();
         END_METHOD
 END_CLASS
 

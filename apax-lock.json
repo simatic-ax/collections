@@ -1,0 +1,525 @@
+{
+  "@ax/apax-build": {
+    "version": "0.4.2",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/apax-build/-/apax-build-0.4.2.tgz",
+    "integrity": "sha512-c1siFFAh1Y2qPhkMNsu++8uh/Vniv0oMTDxo1pDCJCjvyyUBJ513aVGN2nzrP80bmPjzPAcLzWoWB5kPCriDTg==",
+    "dependencies": {
+      "@ax/third-party-licenses-apax-build": "0.4.2"
+    }
+  },
+  "@ax/axunit": {
+    "version": "2.0.6",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/axunit/-/axunit-2.0.6.tgz",
+    "integrity": "sha512-QeRW0H0KzjUkTovQrphIXLmAHhQN452w49FOlXSZdWDRLeCt1j+kvWYlTv1TQudul0vD2vKwOohUUZ82j+o77g==",
+    "dependencies": {
+      "@ax/axunit-docs": "2.0.6",
+      "@ax/axunit-library": "2.0.6",
+      "@ax/axunit-llvm-runner-gen": "2.0.6",
+      "@ax/axunit-runner-llvm": "2.0.6",
+      "@ax/axunit-runner-mc7plus": "2.0.6",
+      "@ax/build-native": "10.1.1",
+      "@ax/target-axunit": "2.0.6",
+      "@ax/third-party-licenses-testingframework": "2.0.6"
+    }
+  },
+  "@ax/axunit-docs": {
+    "version": "2.0.6",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/axunit-docs/-/axunit-docs-2.0.6.tgz",
+    "integrity": "sha512-auoYSf9xueDqbHP3+Ttzcsr5fcwYTbdC5+wRnwJ0Hdm7S1Vg/aO8wcH7GGvp9E37gF0s+rKVLTyDyrKxfR9IhQ==",
+    "dependencies": {
+      "@ax/third-party-licenses-testingframework": "2.0.6"
+    }
+  },
+  "@ax/axunit-library": {
+    "version": "2.0.6",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/axunit-library/-/axunit-library-2.0.6.tgz",
+    "integrity": "sha512-6rXd9hiQPXTrE2/BEqPBZFkiuZ+a0yOn7/XLcAKpE+KP9ovS3Ph8honPHGc/IFcdLRUnDBm7PpnKGYxB4k4+eA==",
+    "dependencies": {
+      "@ax/third-party-licenses-testingframework": "2.0.6"
+    }
+  },
+  "@ax/axunit-llvm-runner-gen": {
+    "version": "2.0.6",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/axunit-llvm-runner-gen/-/axunit-llvm-runner-gen-2.0.6.tgz",
+    "integrity": "sha512-4e2ygiRpcyQKS/sn+0ApXEK8TmCYDyRdoj1KIwso1NiLFGuwojafiot4A/y/IeooL+6sw0mnL3y4NPOS2n2ZXg==",
+    "dependencies": {
+      "@ax/third-party-licenses-testingframework": "2.0.6"
+    }
+  },
+  "@ax/axunit-runner-llvm": {
+    "version": "2.0.6",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/axunit-runner-llvm/-/axunit-runner-llvm-2.0.6.tgz",
+    "integrity": "sha512-I5uUgIaRexct69WsNvgaEsMauVR8icWjQ2kWlux1OeKA3YFhuDFiaxheskLFHZlerihQy6JBQ5TWNL7FJSYU9Q==",
+    "dependencies": {
+      "@ax/axunit-runner-llvm-linux-x64": "2.0.6",
+      "@ax/axunit-runner-llvm-win-x64": "2.0.6",
+      "@ax/third-party-licenses-testingframework": "2.0.6"
+    }
+  },
+  "@ax/axunit-runner-llvm-linux-x64": {
+    "version": "2.0.6",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/axunit-runner-llvm-linux-x64/-/axunit-runner-llvm-linux-x64-2.0.6.tgz",
+    "integrity": "sha512-dRUAIP+/AQkLnBh/Z7mTzOC5/FwoTKm5aUzK5dZkwyQMTZYbahcq55sGrL663okzzDLr5l/EBV7lOzlrIjDhWA==",
+    "os": [
+      "linux"
+    ],
+    "cpu": [
+      "x64"
+    ],
+    "dependencies": {
+      "@ax/third-party-licenses-testingframework": "2.0.6"
+    }
+  },
+  "@ax/axunit-runner-llvm-win-x64": {
+    "version": "2.0.6",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/axunit-runner-llvm-win-x64/-/axunit-runner-llvm-win-x64-2.0.6.tgz",
+    "integrity": "sha512-JSIeeN+fk6/cukb3zzDY+O3ueUvdCtuEp8U2rrx2Ab6A4V0Vl6s2zLaPpnl+hRCfhmiC8hfkCGG9opPPxKQmEw==",
+    "os": [
+      "win32"
+    ],
+    "cpu": [
+      "x64"
+    ],
+    "dependencies": {
+      "@ax/third-party-licenses-testingframework": "2.0.6"
+    }
+  },
+  "@ax/axunit-runner-mc7plus": {
+    "version": "2.0.6",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/axunit-runner-mc7plus/-/axunit-runner-mc7plus-2.0.6.tgz",
+    "integrity": "sha512-8h126wezjpPcg1rxJqAKJW6bw/nlaei5rIKdBydNglw2pBWI8ImHZiwzT4ZHZRr/x7O8tRE0HengTsk/5lh47A==",
+    "dependencies": {
+      "@ax/axunit-runner-mc7plus-win-x64": "2.0.6",
+      "@ax/third-party-licenses-testingframework": "2.0.6"
+    }
+  },
+  "@ax/axunit-runner-mc7plus-win-x64": {
+    "version": "2.0.6",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/axunit-runner-mc7plus-win-x64/-/axunit-runner-mc7plus-win-x64-2.0.6.tgz",
+    "integrity": "sha512-/efPj+J7gkDPoQBVGkF/PEoSRcg8Z3hEYhA308/eCobAwl4BsreBeejXiczLvrkM7Zo3UaC2fpwSEUqs4J/ZzQ==",
+    "os": [
+      "win32"
+    ],
+    "cpu": [
+      "x64"
+    ],
+    "dependencies": {
+      "@ax/third-party-licenses-testingframework": "2.0.6"
+    }
+  },
+  "@ax/build-native": {
+    "version": "10.1.1",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/build-native/-/build-native-10.1.1.tgz",
+    "integrity": "sha512-C1Pwo0dMa21gV1CbqT9umaurHPY4otd8dvlx7zVOlXfEmbgACort5u3K7TeWMNSLdsuBvfkivxrZNWsOkHTtAQ==",
+    "dependencies": {
+      "@ax/build-native-linux": "10.1.1",
+      "@ax/build-native-winx64": "10.1.1",
+      "@ax/third-party-licenses-build-native": "10.1.1"
+    }
+  },
+  "@ax/build-native-linux": {
+    "version": "10.1.1",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/build-native-linux/-/build-native-linux-10.1.1.tgz",
+    "integrity": "sha512-dNNWZGLl8+CtHvojcU+7c3bLFKehkzulrpDdmxzRGq2cb1GwokoNPUBRqB0yQtbW0pTJkXvUAuI9qf8T48PTew==",
+    "os": [
+      "linux"
+    ],
+    "cpu": [
+      "x64"
+    ],
+    "dependencies": {
+      "@ax/third-party-licenses-build-native": "10.1.1"
+    }
+  },
+  "@ax/build-native-winx64": {
+    "version": "10.1.1",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/build-native-winx64/-/build-native-winx64-10.1.1.tgz",
+    "integrity": "sha512-kZnFeTxt+GoVeo+IXTqlGMRLt5iwwtSdpXpyPdyM5DAOAafU2pyBrl7ZkR8SOtwbTG7eXxGrHo5w/rMmhHLZkA==",
+    "os": [
+      "win32"
+    ],
+    "cpu": [
+      "x64"
+    ],
+    "dependencies": {
+      "@ax/third-party-licenses-build-native": "10.1.1"
+    }
+  },
+  "@ax/diag": {
+    "version": "0.17.4",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/diag/-/diag-0.17.4.tgz",
+    "integrity": "sha512-Z3RNRXWsJgP2DiGR5ed/MxuW9Tt92skjAYZBfHHOR8ni9obNbYG2Uh9Fma9ZrSmU7s+cFfVGyPPvurnPJhQwAg==",
+    "dependencies": {
+      "@ax/diag-linux-x64": "0.17.4",
+      "@ax/diag-win-x64": "0.17.4",
+      "@ax/third-party-licenses-monitor": "0.17.4"
+    }
+  },
+  "@ax/diag-linux-x64": {
+    "version": "0.17.4",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/diag-linux-x64/-/diag-linux-x64-0.17.4.tgz",
+    "integrity": "sha512-xXyMhNxLENo8nL4IkQPw2c3w/hroSJMNcYCWNeinu3aLoOMup+i09evJNALYFkMT7sUo2FYqOURIz5O34sn/kw==",
+    "os": [
+      "linux"
+    ],
+    "cpu": [
+      "x64"
+    ],
+    "dependencies": {
+      "@ax/third-party-licenses-monitor": "0.17.4"
+    }
+  },
+  "@ax/diag-win-x64": {
+    "version": "0.17.4",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/diag-win-x64/-/diag-win-x64-0.17.4.tgz",
+    "integrity": "sha512-HopU/QUggN2sUqMqrqhN11K5VMu1z25VPE5ChDbZpqqDkT0hjpx1+tQqP9pwryDgOL+QwQHG5/D1dEW2RGec+w==",
+    "os": [
+      "win32"
+    ],
+    "cpu": [
+      "x64"
+    ],
+    "dependencies": {
+      "@ax/third-party-licenses-monitor": "0.17.4"
+    }
+  },
+  "@ax/mod": {
+    "version": "0.17.4",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/mod/-/mod-0.17.4.tgz",
+    "integrity": "sha512-DBrN+0PB93BiZJ9v+LFtZt9p3k16yujJ21g3nYRGbbxlRvBaoVX36mxpn0HPGec8U1AQi7v7l2yy5UcSt3DHxA==",
+    "dependencies": {
+      "@ax/mod-linux-x64": "0.17.4",
+      "@ax/mod-win-x64": "0.17.4",
+      "@ax/third-party-licenses-monitor": "0.17.4"
+    }
+  },
+  "@ax/mod-linux-x64": {
+    "version": "0.17.4",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/mod-linux-x64/-/mod-linux-x64-0.17.4.tgz",
+    "integrity": "sha512-CofHcxm9nusmMBIRej2OE6uvPFx3b2Q2pPC2hP6tuESqrfn5ZGRuI1es0AUPXaHZD01konfQ/w5a6FOkOS+cyg==",
+    "os": [
+      "linux"
+    ],
+    "cpu": [
+      "x64"
+    ],
+    "dependencies": {
+      "@ax/third-party-licenses-monitor": "0.17.4"
+    }
+  },
+  "@ax/mod-win-x64": {
+    "version": "0.17.4",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/mod-win-x64/-/mod-win-x64-0.17.4.tgz",
+    "integrity": "sha512-K1M0BG/RRJFFfCk6SbseFsc7eaDl0/mWiQWvRBvJy6Nda7JjcyOpOJJJo2ENExj0dm6Iw1WP6b1JyZBJPhbKuQ==",
+    "os": [
+      "win32"
+    ],
+    "cpu": [
+      "x64"
+    ],
+    "dependencies": {
+      "@ax/third-party-licenses-monitor": "0.17.4"
+    }
+  },
+  "@ax/mon": {
+    "version": "0.17.4",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/mon/-/mon-0.17.4.tgz",
+    "integrity": "sha512-V2gtbf36wOiFPnHOTeXlmRpWlkXO33pO4cQ4UZlarhAVnv6+AzvolC0joBDH8NsE1uk9wK349+T283gaC991aw==",
+    "dependencies": {
+      "@ax/mon-linux-x64": "0.17.4",
+      "@ax/mon-win-x64": "0.17.4",
+      "@ax/third-party-licenses-monitor": "0.17.4"
+    }
+  },
+  "@ax/mon-linux-x64": {
+    "version": "0.17.4",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/mon-linux-x64/-/mon-linux-x64-0.17.4.tgz",
+    "integrity": "sha512-NC5nPFdAyvCtjjtDnyYd23oSwMHR9NT3yLJhTLTo0oH+FM58zurDs2CygdkWZIX12aNEhsSJE0lMpJ6RaldiBQ==",
+    "os": [
+      "linux"
+    ],
+    "cpu": [
+      "x64"
+    ],
+    "dependencies": {
+      "@ax/third-party-licenses-monitor": "0.17.4"
+    }
+  },
+  "@ax/mon-win-x64": {
+    "version": "0.17.4",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/mon-win-x64/-/mon-win-x64-0.17.4.tgz",
+    "integrity": "sha512-R3u02RGnQf3AEo0cicefdwSY/UIKlg9WepPiFuYNf4jq15Pv2dUtZbkFa+5nB8hmOdYDdj1RgbRcsSuLV0SWJw==",
+    "os": [
+      "win32"
+    ],
+    "cpu": [
+      "x64"
+    ],
+    "dependencies": {
+      "@ax/third-party-licenses-monitor": "0.17.4"
+    }
+  },
+  "@ax/sdb": {
+    "version": "0.17.4",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/sdb/-/sdb-0.17.4.tgz",
+    "integrity": "sha512-uuX4XonmzE3EUHZFxJpqg/oW/hRh260oE3I9s9C1b6LhENfY4M4w/4RWQclwy8kEMAZNJAmLu8mph3wjFPbcqg==",
+    "dependencies": {
+      "@ax/sdb-linux-x64": "0.17.4",
+      "@ax/sdb-win-x64": "0.17.4",
+      "@ax/third-party-licenses-monitor": "0.17.4"
+    }
+  },
+  "@ax/sdb-linux-x64": {
+    "version": "0.17.4",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/sdb-linux-x64/-/sdb-linux-x64-0.17.4.tgz",
+    "integrity": "sha512-Z968H7WATjAW35mItoV+LGWFo236gWwlJ5xzii0TXsiRAbbCr14MiTnObDZr3lGUKqe0hUwm3xOTj1hCUcFVrA==",
+    "os": [
+      "linux"
+    ],
+    "cpu": [
+      "x64"
+    ],
+    "dependencies": {
+      "@ax/third-party-licenses-monitor": "0.17.4"
+    }
+  },
+  "@ax/sdb-win-x64": {
+    "version": "0.17.4",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/sdb-win-x64/-/sdb-win-x64-0.17.4.tgz",
+    "integrity": "sha512-SubrVGW/1JY5pZ+2UIgGuJSduDlXXRCL5vFyhGPS7J+RMki2TJCiEMMorxwbAdzUymv9uqTPbvMzQbE17y3XGQ==",
+    "os": [
+      "win32"
+    ],
+    "cpu": [
+      "x64"
+    ],
+    "dependencies": {
+      "@ax/third-party-licenses-monitor": "0.17.4"
+    }
+  },
+  "@ax/sdk": {
+    "version": "2.0.4",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/sdk/-/sdk-2.0.4.tgz",
+    "integrity": "sha512-idEPRGJ9YT71RpRwGaYs/jeG/C3gYXmEQEHTndbk5jmchzAIlpwI32oyLFdG38+0qdaao1hn5KfLjHCPKmFKqg==",
+    "dependencies": {
+      "@ax/axunit": "2.0.6",
+      "@ax/diag": "0.17.4",
+      "@ax/mod": "0.17.4",
+      "@ax/mon": "0.17.4",
+      "@ax/sdb": "0.17.4",
+      "@ax/sld": "0.12.1",
+      "@ax/st": "2.0.4",
+      "@ax/target-llvm": "3.2.66",
+      "@ax/target-mc7plus": "3.2.66"
+    }
+  },
+  "@ax/sld": {
+    "version": "0.12.1",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/sld/-/sld-0.12.1.tgz",
+    "integrity": "sha512-9FqP80QhgOjgPEEiVXZBFdemPFIW76XZg7MHylijyGYT4x5vLq2dRa59Hx8zMEPRS5jJVcOrJ5lnQpGZCDJrDQ==",
+    "dependencies": {
+      "@ax/sld-linux-x64": "0.12.1",
+      "@ax/sld-win-x64": "0.12.1",
+      "@ax/third-party-licenses-plc-loader": "0.12.1"
+    }
+  },
+  "@ax/sld-linux-x64": {
+    "version": "0.12.1",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/sld-linux-x64/-/sld-linux-x64-0.12.1.tgz",
+    "integrity": "sha512-NeacGQ4xptssaq6SVYqOd3w5su3c0pz+ceRbaBiCk1GgHDXIrsw6I6v6QLeza8P/u688L9q0/8RY4A+JP8+dLA==",
+    "os": [
+      "linux"
+    ],
+    "cpu": [
+      "x64"
+    ],
+    "dependencies": {
+      "@ax/third-party-licenses-plc-loader": "0.12.1"
+    }
+  },
+  "@ax/sld-win-x64": {
+    "version": "0.12.1",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/sld-win-x64/-/sld-win-x64-0.12.1.tgz",
+    "integrity": "sha512-8Ou2iEPE1M3JgUmG1ttn8LHoDwZwcKxiZyTIsj2gTcoiaUYFP56EAABtjniXQM7x0l39M24RgG4GNHS2AN/wHw==",
+    "os": [
+      "win32"
+    ],
+    "cpu": [
+      "x64"
+    ],
+    "dependencies": {
+      "@ax/third-party-licenses-plc-loader": "0.12.1"
+    }
+  },
+  "@ax/st": {
+    "version": "2.0.4",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/st/-/st-2.0.4.tgz",
+    "integrity": "sha512-V2icXExmCTRKjjqJqGNDZcUXYIHLbyz5wL+OoJiArxsjWlthJOBx9qBVD99zfzeOyYkqoogr+TEDblp8iojYnA==",
+    "dependencies": {
+      "@ax/apax-build": "0.4.2",
+      "@ax/stc": "3.2.66"
+    }
+  },
+  "@ax/st-docs": {
+    "version": "3.2.66",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/st-docs/-/st-docs-3.2.66.tgz",
+    "integrity": "sha512-yHr/qpzZ7ETApfhIZbX1sd91qR8Ry/VthUXdTfHHqrOKmDwY2CnCoPxYMCe84fx39VC48xL6EyIpO04CCi1lwg==",
+    "dependencies": {
+      "@ax/third-party-licenses-st-compiler": "3.2.66"
+    }
+  },
+  "@ax/stc": {
+    "version": "3.2.66",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/stc/-/stc-3.2.66.tgz",
+    "integrity": "sha512-fkdpfP3Qq4tYowYjSE6PGAgNHiafAtPRSC+MFqIr9yF2+zUgE8Kzb2P/YKsZpNglXbd5irekp1ddYfSsFGYgbQ==",
+    "dependencies": {
+      "@ax/stc-linux-x64": "3.2.66",
+      "@ax/stc-win-x64": "3.2.66",
+      "@ax/third-party-licenses-st-compiler": "3.2.66"
+    }
+  },
+  "@ax/stc-linux-x64": {
+    "version": "3.2.66",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/stc-linux-x64/-/stc-linux-x64-3.2.66.tgz",
+    "integrity": "sha512-A38nTQHP+jUfAHJHBXs9xnrBBNda0GL1nwNwWsCFWKIBhX9jSr8Can/lGChUVMmY//8uZcaG5Uf5soLTtn4+AQ==",
+    "os": [
+      "linux"
+    ],
+    "cpu": [
+      "x64"
+    ],
+    "dependencies": {
+      "@ax/st-docs": "3.2.66",
+      "@ax/third-party-licenses-st-compiler": "3.2.66"
+    }
+  },
+  "@ax/stc-win-x64": {
+    "version": "3.2.66",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/stc-win-x64/-/stc-win-x64-3.2.66.tgz",
+    "integrity": "sha512-yJEVDDC9Ty3B1yfMLT1hVoy7nXCwazcQeAYzwoU4oIP64AQOR599NHNnMPwXqoRGbdJWOvaIY0KQEmVXZSPW4g==",
+    "os": [
+      "win32"
+    ],
+    "cpu": [
+      "x64"
+    ],
+    "dependencies": {
+      "@ax/st-docs": "3.2.66",
+      "@ax/third-party-licenses-st-compiler": "3.2.66"
+    }
+  },
+  "@ax/target-axunit": {
+    "version": "2.0.6",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/target-axunit/-/target-axunit-2.0.6.tgz",
+    "integrity": "sha512-HJLeQIs0VZZ5xkptVgFoDFWKSRcWzg5ExInEb6LV08MfwUsklB3cplWvsnDLE84EhhNIhE3n2ooX53rzARTlvA==",
+    "dependencies": {
+      "@ax/third-party-licenses-testingframework": "2.0.6"
+    }
+  },
+  "@ax/target-llvm": {
+    "version": "3.2.66",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/target-llvm/-/target-llvm-3.2.66.tgz",
+    "integrity": "sha512-A+0A59fuv8Ije4sI+a3ep2+jMsQy7L7tD73LG/Z35I+wHZ9g9k55h5JkMbZKNXLgZnq+DumvXxnRwe5RVKu1EQ==",
+    "dependencies": {
+      "@ax/target-llvm-linux-x64": "3.2.66",
+      "@ax/target-llvm-win-x64": "3.2.66",
+      "@ax/third-party-licenses-st-compiler": "3.2.66"
+    }
+  },
+  "@ax/target-llvm-linux-x64": {
+    "version": "3.2.66",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/target-llvm-linux-x64/-/target-llvm-linux-x64-3.2.66.tgz",
+    "integrity": "sha512-FcJASuxU6pEgwRZOOUFcZCjkbPIf9DiHTUqvkwWlczj+a2lVVpLy7XCGIHktji/cQt1Ltj9Vozun5vMbDiw70w==",
+    "os": [
+      "linux"
+    ],
+    "cpu": [
+      "x64"
+    ],
+    "dependencies": {
+      "@ax/third-party-licenses-st-compiler": "3.2.66"
+    }
+  },
+  "@ax/target-llvm-win-x64": {
+    "version": "3.2.66",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/target-llvm-win-x64/-/target-llvm-win-x64-3.2.66.tgz",
+    "integrity": "sha512-KrpUb8sXAQyRRHbAeMiHYi/Rne4nL3cJ/UmYtUA8rQh8wjYpLEa72Eg8z/cO/1V/ibyQmSXQYgAdOGeUOyR2Eg==",
+    "os": [
+      "win32"
+    ],
+    "cpu": [
+      "x64"
+    ],
+    "dependencies": {
+      "@ax/third-party-licenses-st-compiler": "3.2.66"
+    }
+  },
+  "@ax/target-mc7plus": {
+    "version": "3.2.66",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/target-mc7plus/-/target-mc7plus-3.2.66.tgz",
+    "integrity": "sha512-RdUzy+HGlG7+OHcHYKDsljYY80Y3OeuIgNRrN+a8xNJyElFZoSVAhJqs93R/zr++yYyKpjnFmH7G72yWUwiVPw==",
+    "dependencies": {
+      "@ax/target-mc7plus-linux-x64": "3.2.66",
+      "@ax/target-mc7plus-win-x64": "3.2.66",
+      "@ax/third-party-licenses-st-compiler": "3.2.66"
+    }
+  },
+  "@ax/target-mc7plus-linux-x64": {
+    "version": "3.2.66",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/target-mc7plus-linux-x64/-/target-mc7plus-linux-x64-3.2.66.tgz",
+    "integrity": "sha512-XGSP6ykynK8ssLJJtQHhnsyDT9fDC7S4AhSfdPvFIWhnjZ25J0rlhQ+eLwYG2p2oJ3phJRQjUIozS69EZG7KxQ==",
+    "os": [
+      "linux"
+    ],
+    "cpu": [
+      "x64"
+    ],
+    "dependencies": {
+      "@ax/third-party-licenses-st-compiler": "3.2.66"
+    }
+  },
+  "@ax/target-mc7plus-win-x64": {
+    "version": "3.2.66",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/target-mc7plus-win-x64/-/target-mc7plus-win-x64-3.2.66.tgz",
+    "integrity": "sha512-UxxtW2EVGDKyXjDzKnA31UKd6kGVZwemYRokNdZnHs4ISs3zwHuGayNFEBUGrttXoIKTxcG4+lLrBCFHC8ty1g==",
+    "os": [
+      "win32"
+    ],
+    "cpu": [
+      "x64"
+    ],
+    "dependencies": {
+      "@ax/third-party-licenses-st-compiler": "3.2.66"
+    }
+  },
+  "@ax/third-party-licenses-apax-build": {
+    "version": "0.4.2",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/third-party-licenses-apax-build/-/third-party-licenses-apax-build-0.4.2.tgz",
+    "integrity": "sha512-pa/lr9gxgpinBDXYdy+Ekr0hBo1J5B9H6D8IYPSfPpfXYnj87Q8P93AEFutGFRIDJ3A8l+qaLeOz77vpmR8qfA=="
+  },
+  "@ax/third-party-licenses-build-native": {
+    "version": "10.1.1",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/third-party-licenses-build-native/-/third-party-licenses-build-native-10.1.1.tgz",
+    "integrity": "sha512-Da+AT0KujH3K9bKf4K4rqPA3Z+a/WDkw9p6328AlrSqgBIUFyUZzOM3eVOwhhjKCnmNAVSmtSp0r7crDFGICTw=="
+  },
+  "@ax/third-party-licenses-monitor": {
+    "version": "0.17.4",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/third-party-licenses-monitor/-/third-party-licenses-monitor-0.17.4.tgz",
+    "integrity": "sha512-ac5nbrpOkX0EuaghbQc8G7AZEOow3aTGlNb/jv3P+iBFvdslrpgGFe5wbHnKxPgkt9TaIf/n48Wy/N8IfVdlKg=="
+  },
+  "@ax/third-party-licenses-plc-loader": {
+    "version": "0.12.1",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/third-party-licenses-plc-loader/-/third-party-licenses-plc-loader-0.12.1.tgz",
+    "integrity": "sha512-6KmsG+8fwmbR7WwEOpaTu/87vvTMMun1g/PcPJQoTUTSAf0fxrDvNmIHYRSIp2gVpt/6v/mryDfIKAnvvSt91g=="
+  },
+  "@ax/third-party-licenses-st-compiler": {
+    "version": "3.2.66",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/third-party-licenses-st-compiler/-/third-party-licenses-st-compiler-3.2.66.tgz",
+    "integrity": "sha512-HJ62HByHFmwArdnlMGkvl/RwOYxC3Lcf4y+cQvG7ufBbg7ecGu+3qpebq8vgWas1ERCYKGd6WhSpLv09tdbdag=="
+  },
+  "@ax/third-party-licenses-testingframework": {
+    "version": "2.0.6",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/third-party-licenses-testingframework/-/third-party-licenses-testingframework-2.0.6.tgz",
+    "integrity": "sha512-nOT7y6IfQOS0TExz/Xh+NulHEAJGuh/ggbeIA9nGCk5gkkJrvcqNmPVGnfra/uMQzXDTNB3iDtAyEp0Go8yuQQ=="
+  }
+}

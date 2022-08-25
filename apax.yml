@@ -1,5 +1,5 @@
 name: '@simatic-ax/collections'
-version: 0.1.2
+version: 0.2.0
 author: Siemens AG
 type: lib
 variables:
@@ -21,12 +21,13 @@ scripts:
     - apax pack
     - apax publishlib
 devDependencies:
-  '@ax/sdk': 1.0.138
+  '@ax/sdk': 2.0.4
 registries:
   '@simatic-ax': 'https://npm.pkg.github.com'
 files:
   - 'README.md'
   - 'LICENSE.md'
+  - 'changelog.md'
   - 'doc/'
   - 'src/' # ship library with source
   # - 'bin/1500/'   # ship library with binary

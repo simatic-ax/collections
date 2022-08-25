@@ -1,19 +1,19 @@
 NAMESPACE Simatic.Ax.Collections
-    CLASS Fifo IMPLEMENTS IFifo
+    CLASS Fifo IMPLEMENTS ICollection
         VAR PRIVATE
             _list : LinkedList;
         END_VAR
 
-        METHOD PUBLIC FINAL Write
+        METHOD PUBLIC FINAL Enqueue : IListItem
             VAR_INPUT
                 item : IListItem;
             END_VAR
 
-            _list.Add(item := item);
+            Enqueue := _list.Add(item := item);
         END_METHOD
         
-        METHOD PUBLIC Read : IListItem
-            Read := _list.Tail();
+        METHOD PUBLIC Dequeue : IListItem
+            Dequeue := _list.Tail();
             _list.Remove(_list.Tail());
         END_METHOD
     
