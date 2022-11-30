@@ -20,7 +20,7 @@ apax add @simatic-ax/collections
 Simatic.Ax.Collections;
 ```
 
-> to install this package you need to login into the GitHub registry. You'll find more information [here](https://github.com/simatic-ax/.github/blob/main/doc/personalaccesstoken.md)
+> to install this package you need to login into the GitHub registry. You'll find more information [here](https://github.com/simatic-ax/.github/blob/main/docs/personalaccesstoken.md)
 
 ## Linked List
 
