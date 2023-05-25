@@ -50,7 +50,7 @@ USING AxUnit.Assert;
 
 NAMESPACE Simatic.Ax.Collections
 
-    // Example of a ListItem
+    // Example of a concrete customized ListItem
     CLASS MinMaxItem
         EXTENDS ListItem
         VAR PUBLIC
@@ -59,7 +59,7 @@ NAMESPACE Simatic.Ax.Collections
         END_VAR
     END_CLASS
 
-    // Example of another ListItem
+    // Example of a concrete customized ListItem
     CLASS RangeItem
         EXTENDS ListItem
         VAR PUBLIC
@@ -74,7 +74,7 @@ NAMESPACE Simatic.Ax.Collections
             _list : LinkedList;
             _i1 : MinMaxItem := (Min := 1, Max := 100);
             _i2 : MinMaxItem := (Min := 2, Max := 200);
-            _i3 : RangeItem := (FromValue := 3, ToValue := 300); // declare a wrong another list item whicg is not of type MinMaxItem
+            _i3 : RangeItem := (FromValue := 3, ToValue := 300); // declare a wrong, another list item which is not of type MinMaxItem
             _item : REF_TO MinMaxItem;
         END_VAR
         // Add 2 elements of MinMaxItem and one wrong element RangeItem to the list. 
