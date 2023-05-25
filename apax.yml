@@ -1,5 +1,5 @@
 name: '@simatic-ax/collections'
-version: 0.2.0
+version: 0.0.0-placeholder
 author: Siemens AG
 type: lib
 variables:
@@ -10,18 +10,8 @@ variables:
 targets:
   - '1500'
   - 'axunit-llvm'
-scripts:
-  publishlib:
-    - apax publish --package *.apax.tgz --registry $GITHUB_REG_URL
-    - rm *.apax.tgz -f
-  createpackage:
-    - apax build
-    - apax test
-    - apax version $1
-    - apax pack
-    - apax publishlib
 devDependencies:
-  '@ax/sdk': 2.0.4
+  '@ax/sdk': 3.0.18
 registries:
   '@simatic-ax': 'https://npm.pkg.github.com'
 files:
