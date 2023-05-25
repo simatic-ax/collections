@@ -1,6 +1,6 @@
 NAMESPACE Simatic.Ax.Collections
 
-    INTERFACE IQueue
+    INTERFACE IFifo
         METHOD Enqueue : IListItem
             VAR_INPUT
                 item : IListItem;

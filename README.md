@@ -1,22 +1,24 @@
 # Simatic.AX.Collections
 
-## Version
-Version 0.2.0 see [change log](changelog.md)
+This collection library contains some classes for list handling of types of IListItem. Unfortunately the ST implementation does not support any generic data types and also no dynamic memory allocation. Therefore this example library has much space for improvement and it is open for discussion with other users.
 
-This collection library contains some useful classes for list handling of types of IListItem. The Advantage of the concept is, that you don't need to use arrays with fixed size and you can mix the types as long as they're of type IListItem.
+The actual implementation is based on a linked list item (IListItem) where you need to create for each item a instance (which also can be stored in an array)
+The Advantage of the concept is, that you don't need to use arrays with fixed size and you can mix the types as long as they're of type IListItem.
 
-> Important: By inserting, adding, writing some items NO copy of the object will be created.
+
+> Important: By inserting, adding, writing some items NO copy of the object will be created. You need to manage the list items by yourself.
 
 ## Install this package
 
 Enter:
+
 ```cli
 apax add @simatic-ax/collections
 ```
 
-## Namespace 
+## Namespace
 
-```
+```iec-st
 Simatic.Ax.Collections;
 ```
 
@@ -24,7 +26,7 @@ Simatic.Ax.Collections;
 
 ## Linked List
 
-### Add() : IListItem Method
+### LinkedList.Add() : IListItem Method
 
 Add a new object IListItem to the end of the list
 
@@ -43,7 +45,7 @@ METHOD PUBLIC FINAL Add : IListItem
 END_METHOD
 ```
 
-### Remove() : BOOL Method
+### LinkedList.Remove() : BOOL Method
 
 Remove a IListItem from the list.
 
@@ -60,13 +62,13 @@ END_METHOD
 |Return Value   |Bool       |Removing item was successful    |
 |item           |IListItem  |Reference to item to be removed |
 
-## Queue
+## Fifo
 
 Represents a first-in, first-out (FIFO) collection of IListItem.
 
-### Enqueue(item : IListItem) : IListItem Method
+### Fifo.Enqueue(item : IListItem) : IListItem Method
 
-```iec-st        
+```iec-st
 METHOD Enqueue : IListItem
     VAR_INPUT
         item : IListItem;
@@ -79,7 +81,7 @@ END_METHOD
 |Return Value   |IListItem |Reference to the enqueued item  |
 |item           |IListItem |Item to be inserted             |
 
-### Dequeue() : IListItem Method
+### Fifo.Dequeue() : IListItem Method
 
 ```iec-st
 METHOD Dequeue : IListItem
@@ -90,7 +92,7 @@ END_METHOD
 |-|-|-|
 |Return Value   | IListItem       | Return and remove the oldest element in the list  |
 
-### Count() INT;
+### Fifo.Count() INT
 
 ```iec-st
     METHOD PUBLIC Count : INT
@@ -105,9 +107,9 @@ END_METHOD
 
 Represents a simple last-in-first-out (LIFO) collection of IListItem.
 
-### Push(item : IListItem) : IListItem Method
+### Stack.Push(item : IListItem) : IListItem Method
 
-```iec-st        
+```iec-st
 METHOD Push : IListItem
     VAR_INPUT
         item : IListItem;
@@ -120,7 +122,7 @@ END_METHOD
 |Return Value   |IListItem |Reference to the pushed item  |
 |item           |IListItem |Item to be inserted             |
 
-### Pop() : IListItem Method
+### Stack.Pop() : IListItem Method
 
 ```iec-st
 METHOD Pop : IListItem
@@ -131,7 +133,7 @@ END_METHOD
 |-|-|-|
 |Return Value   | IListItem       | Return and remove the newest element in the list  |
 
-### Peek() : IListItem Method
+### Stack.Peek() : IListItem Method
 
 ```iec-st
 METHOD Peek : IListItem
@@ -142,7 +144,7 @@ END_METHOD
 |-|-|-|
 |Return Value   | IListItem       | Return the newest element in the list (without removing) |
 
-### Count() INT;
+### Stack.Count() : INT
 
 ```iec-st
     METHOD PUBLIC Count : INT
@@ -156,6 +158,15 @@ END_METHOD
 ## Contribution
 
 Thanks for your interest in contributing. Anybody is free to report bugs, unclear documentation, and other problems regarding this repository in the Issues section or, even better, is free to propose any changes to this repository using Merge Requests.
+
+### Markdownlint-cli
+
+This workspace will be checked by the [markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli) (there is also documented ho to install the tool) tool in the CI workflow automatically.  
+To avoid, that the CI workflow fails because of the markdown linter, you can check all markdown files locally by running the markdownlint with:
+
+```sh
+markdownlint **/*.md --fix
+```
 
 ## License and Legal information
 
