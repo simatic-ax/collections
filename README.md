@@ -5,7 +5,6 @@ This collection library contains some classes for list handling of types of ILis
 The actual implementation is based on a linked list item (IListItem) where you need to create for each item a instance (which also can be stored in an array)
 The Advantage of the concept is, that you don't need to use arrays with fixed size and you can mix the types as long as they're of type IListItem.
 
-
 > Important: By inserting, adding, writing some items NO copy of the object will be created. You need to manage the list items by yourself.
 
 ## Install this package
