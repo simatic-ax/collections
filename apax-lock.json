@@ -388,5 +388,10 @@
     "version": "10.1.1",
     "resolved": "https://registry.simatic-ax.siemens.io/@ax/third-party-licenses-build-native/-/third-party-licenses-build-native-10.1.1.tgz",
     "integrity": "sha512-Da+AT0KujH3K9bKf4K4rqPA3Z+a/WDkw9p6328AlrSqgBIUFyUZzOM3eVOwhhjKCnmNAVSmtSp0r7crDFGICTw=="
+  },
+  "@simatic-ax/snippetscollection": {
+    "version": "0.1.3",
+    "resolved": "https://npm.pkg.github.com/download/@simatic-ax/snippetscollection/0.1.3/e287ad803a10c04ed92a9b73eb1b735ca267212f",
+    "integrity": "sha512-YcuBXUs4VeW60LLdJ/p7p2aCXWxhrzHg4YEmMKtDOLPjL7EWbQT+4RUNoE2PANv7VTX/hr9+iLjR5ahfKp2utA=="
   }
 }
