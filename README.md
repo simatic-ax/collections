@@ -26,6 +26,7 @@ Simatic.Ax.Collections;
 ## Linked List
 
 ### Class LinkedList
+
 ```mermaid
 ---
 title: LinkedList Class Diagram
@@ -43,8 +44,8 @@ classDiagram
     }
 ```
 
-
 Example:
+
 ```iec-st
 USING AxUnit.Assert;
 
@@ -139,8 +140,6 @@ END_METHOD
 |-|-|-|
 |Return Value   |Bool       |Removing item was successful    |
 |item           |IListItem  |Reference to item to be removed |
-
-
 
 ## Fifo
 
