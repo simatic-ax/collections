@@ -10,8 +10,8 @@ targets:
   - '1500'
   - 'axunit-llvm'
 devDependencies:
-  '@ax/sdk': 3.0.18
-  '@simatic-ax/snippetscollection': 0.1.3
+  '@ax/sdk': 2405.0.0
+  '@simatic-ax/snippetscollection': 1.0.0
 registries:
   '@simatic-ax': 'https://npm.pkg.github.com'
 files:
@@ -20,4 +20,3 @@ files:
   - 'changelog.md'
   - 'doc/'
   - 'src/' # ship library with source
-
