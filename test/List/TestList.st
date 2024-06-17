@@ -6,7 +6,8 @@ NAMESPACE Simatic.Ax.Collections
     {TestFixture}
     CLASS TestList
         VAR PRIVATE
-            _list : LinkedList;                    
+            _list : LinkedList;  
+            _listStateLess : LinkedList;
             _i1 : ListItem;
             _i2 : ListItem;
             _i3 : ListItem;
@@ -15,7 +16,11 @@ NAMESPACE Simatic.Ax.Collections
             _item : IListItem;
         END_VAR
         
-
+        // This method will be called before each test method
+        {TestSetup}
+        METHOD PUBLIC MyTestSetup
+            _list := _listStateLess;
+        END_METHOD
 
         {Test}
         METHOD PUBLIC Test_Add_Expect_Item
