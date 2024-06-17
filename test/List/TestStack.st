@@ -6,7 +6,8 @@ NAMESPACE Simatic.Ax.Collections
     {TestFixture}
     CLASS TestStack
         VAR PRIVATE
-            _stack : Stack;                    
+            _stack : Stack;    
+            _stackStateLess : Stack;
             _i1 : ListItem;
             _i2 : ListItem;
             _i3 : ListItem;
@@ -15,7 +16,11 @@ NAMESPACE Simatic.Ax.Collections
             _item : IListItem;
         END_VAR
         
-
+        // This method will be called before each test method
+        {TestSetup}
+        METHOD PUBLIC MyTestSetup
+            _stack := _stackStateLess;
+        END_METHOD
 
         {Test}
         METHOD PUBLIC Test_Add_Expect_Item
@@ -37,7 +42,7 @@ NAMESPACE Simatic.Ax.Collections
         END_METHOD
         
         {Test}
-        METHOD PUBLIC Test_Tail_Top_NULL
+        METHOD PUBLIC Test_Top_NULL
             THIS.Test_Add_3_Elements();
             Equal(_stack.Peek().NextItem() = NULL, TRUE);
         END_METHOD

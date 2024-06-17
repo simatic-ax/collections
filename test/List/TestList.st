@@ -6,7 +6,8 @@ NAMESPACE Simatic.Ax.Collections
     {TestFixture}
     CLASS TestList
         VAR PRIVATE
-            _list : LinkedList;                    
+            _list : LinkedList;  
+            _listStateLess : LinkedList;
             _i1 : ListItem;
             _i2 : ListItem;
             _i3 : ListItem;
@@ -15,7 +16,11 @@ NAMESPACE Simatic.Ax.Collections
             _item : IListItem;
         END_VAR
         
-
+        // This method will be called before each test method
+        {TestSetup}
+        METHOD PUBLIC MyTestSetup
+            _list := _listStateLess;
+        END_METHOD
 
         {Test}
         METHOD PUBLIC Test_Add_Expect_Item
@@ -31,21 +36,19 @@ NAMESPACE Simatic.Ax.Collections
             _iReturn := _list.Add(item := _i2);
             _iReturn := _list.Add(item := _i3);
 
-            _item := _i3; // Tail
+            _item := _i3; // Head
             Equal(_list.Head() = _item, TRUE);
+            Equal(_list.Head().NextItem() = NULL, TRUE); // Next item is empty
 
             _item := _i1; // Tail
             Equal(_list.Tail() = _item, TRUE);
+            Equal(_list.Tail().PreviousItem() = NULL, TRUE); // before item is empty, cause is first
+
+            Equal(_list.Count(), 3);     
             
-            Equal(_list.Count(), 3);
         END_METHOD
         
-        {Test}
-        METHOD PUBLIC Test_Tail_Top_NULL
-            THIS.Test_Add_3_Elements();
-            Equal(_list.Tail().PreviousItem() = NULL, TRUE);
-            Equal(_list.Head().NextItem() = NULL, TRUE);
-        END_METHOD
+
         {Test}
 
         METHOD PUBLIC Test_Tail_Next_Equals_Top

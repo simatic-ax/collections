@@ -1,23 +1,32 @@
+# General information
 name: '@simatic-ax/collections'
 version: 0.0.0-placeholder
 author: Siemens AG
+# Description will be displayed in the apax extension
+description: This library is for list handling (FIFO/LIFO/LinkedList)
 type: lib
+# Registry information, where the package will be published
+registries:
+  '@simatic-ax': 'https://npm.pkg.github.com'
+# Environment variables
 variables:
   APAX_BUILD_ARGS:
     - --debug
   GITHUB_REG_URL: "https://npm.pkg.github.com"
 targets:
   - '1500'
-  - 'axunit-llvm'
+  - 'llvm'
+# Install Setting
+installStrategy: strict
+apaxVersion: 3.2.1
+# Dependencies
 devDependencies:
-  '@ax/sdk': 3.0.18
-  '@simatic-ax/snippetscollection': 0.1.3
-registries:
-  '@simatic-ax': 'https://npm.pkg.github.com'
+  '@ax/sdk': 2405.0.0
+  '@simatic-ax/snippetscollection': 1.0.0
+# Files, which will be shipped with the library
 files:
   - 'README.md'
   - 'LICENSE.md'
   - 'changelog.md'
   - 'doc/'
   - 'src/' # ship library with source
-
