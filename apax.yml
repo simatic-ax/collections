@@ -15,7 +15,7 @@ variables:
   GITHUB_REG_URL: "https://npm.pkg.github.com"
 targets:
   - '1500'
-  - 'axunit-llvm'
+  - 'llvm'
 # Install Setting
 installStrategy: strict
 apaxVersion: 3.2.1
