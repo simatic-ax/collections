@@ -39,6 +39,9 @@ jobs:
           ref: ${{ github.event.release.target_commitish }}
           fetch-depth: 0
 
+      - name: Create bin folder
+        run: mkdir -p bin
+        
       - name: Download build artifacts
         uses: actions/download-artifact@v4
         with:
