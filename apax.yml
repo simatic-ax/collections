@@ -16,17 +16,17 @@ variables:
 targets:
   - '1500'
   - 'llvm'
-# Install Setting
-installStrategy: strict
-apaxVersion: 3.2.1
+
 # Dependencies
+catalogs:
+  "@ax/simatic-ax": ^2504.0.0
 devDependencies:
-  '@ax/sdk': 2411.0.0
-  '@simatic-ax/snippetscollection': 1.0.0
+  '@ax/sdk': ^2504.0.0
+  '@simatic-ax/snippetscollection': ^1.0.0
 # Files, which will be shipped with the library
 files:
   - 'README.md'
   - 'LICENSE.md'
   - 'changelog.md'
   - 'doc/'
-  - 'src/' # ship library with source
+  - 'bin'
