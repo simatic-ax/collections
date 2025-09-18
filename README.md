@@ -28,6 +28,8 @@ Simatic.Ax.Collections;
 
 
 
+
+
 ### Class LinkedList
 
 ```mermaid
