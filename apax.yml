@@ -22,7 +22,6 @@ apaxVersion: 3.2.1
 # Dependencies
 devDependencies:
   '@ax/sdk': 2411.0.0
-  '@simatic-ax/snippetscollection': 1.0.0
 # Files, which will be shipped with the library
 files:
   - 'README.md'
@@ -30,3 +29,5 @@ files:
   - 'changelog.md'
   - 'doc/'
   - 'src/' # ship library with source
+catalogs:
+  "@ax/simatic-ax": 2411.1.0
