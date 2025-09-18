@@ -3,7 +3,4 @@ NAMESPACE Simatic.Ax.Collections
     INTERFACE ICollection
     END_INTERFACE
 
-    INTERFACE IStack
-    END_INTERFACE
-
 END_NAMESPACE
