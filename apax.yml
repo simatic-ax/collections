@@ -19,7 +19,7 @@ targets:
 
 # Dependencies
 catalogs:
-  "@ax/simatic-ax": ^2504.0.0
+  "@ax/simatic-ax": ^2510.0.0
 devDependencies:
   '@ax/sdk': ^2504.0.0
   '@simatic-ax/snippetscollection': ^1.0.0
